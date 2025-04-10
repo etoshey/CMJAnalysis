@@ -17,12 +17,13 @@ Using this python script you can compute Height of Jump, Fight time, RSImod and 
 
 ```
 
-Then if the c3d file read correctlly, a plot will be opened you can select the relevent zone by drag, just remember the mass of subject calculat based on 100 first sample data points.
+Then if the c3d file read correctlly, a plot will be opened you can select the relevent zone by drag, just remember the mass of subject calculat based on 100 first sample data points.</br>
 
 ![CMJ](doc/1.png)
 
-Processed signal:
+Processed signal:</br>
+
 ![CMJ](doc/2.png)
 
-Now you can see the results in terminal:
+Now you can see the results in terminal:</br>
 ![CMJ](doc/3.png)
