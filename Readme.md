@@ -10,6 +10,8 @@ Using this Python script, you can compute jump height, flight time, RSImod, and 
 
 # Run script
 
+First, copy your token from <a  href="C3dtools.com"> C3DTools </a> and past it in the main.py, then run script file
+
 ```python
     python main.py --arg1 C3DFilePath --arg2 ForceplateNumber
 

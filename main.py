@@ -12,11 +12,11 @@ from rich.table import Table
 
 
 
-Token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU2YTk3YWFkMzBlZDBhZWJlMjIyOTkiLCJpYXQiOjE3MzE4NjUxMDAsImV4cCI6MTczMTg2ODcwMH0.CzMVocaHroccKGJ1blokFa177tgqkhrRR6utT6UTtQo"
+Token = "YOURTOKEN"
 
 
 
-def redC3D(path):
+def redC3D(path, forceplaet=0):
     c3d  = pyc3dtools.readC3D(Token,path)    
     if c3d['Status']=='Failed':
         print(f"Failed to Read File... | {c3d['error']}") 
@@ -96,7 +96,7 @@ def main():
     print(f"Argument 1: {args.arg1}")
     print(f"Argument 2: {args.arg2}")
     
-    FZ,samplingRate = redC3D('./data/FPCMJ.c3d')
+    FZ,samplingRate = redC3D(args.arg1,args.arg2)
     mass = np.mean(FZ[0:100])
     proce_data =  Force_plate_process.process(FZ,samplingRate,mass) #subject mass
     
